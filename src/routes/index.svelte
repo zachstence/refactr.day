@@ -1,2 +1,8 @@
-<h1 class="text-purple-500">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import { daysSince, lastRefactor } from '../lib/stores'
+</script>
+
+
+It has been {$daysSince} days since the last refactor.
+
+<button on:click={lastRefactor.reset}>Reset</button>
