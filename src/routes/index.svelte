@@ -1,8 +1,15 @@
-<script>
-    import { daysSince, lastRefactor } from '../lib/stores'
+<script lang="ts">
+    export let days: number;
+
+    let _days = days;
+
+    const reset = async () => {
+        const response = await fetch("/reset", { method: 'PUT' })
+        const body = await response.json();
+        _days = body.days;
+    }
 </script>
 
+It has been {_days} days since the last refactor.
 
-It has been {$daysSince} days since the last refactor.
-
-<button on:click={lastRefactor.reset}>Reset</button>
+<button on:click={reset}>Reset</button>
