@@ -1,8 +1,24 @@
 * {
-    color: white;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     margin: 0;
+    transition: all 0.15s ease;
+}
+
+body.light {
+    background: url('/background-tile-light.png');
+}
+
+body.light * {
+    color: black;
+}
+
+body.dark {
+    background: url('/background-tile-dark.png');
+}
+
+body.dark * {
+    color: white;
 }
 
 @font-face {

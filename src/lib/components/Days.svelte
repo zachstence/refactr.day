@@ -38,9 +38,17 @@
             top: 0;
             right: 0;
             z-index: -1;
+            transition: color 0.15s ease;
             
             content: "888";
-            color: rgba(255, 255, 255, 0.15);
         }
+    }
+
+    :global(body.dark) pre::before {
+        color: rgba(255, 255, 255, 0.15);
+    }
+
+    :global(body.light) pre::before {
+        color: rgba(0, 0, 0, 0.15);
     }
 </style>

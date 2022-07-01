@@ -1,11 +1,17 @@
 <script>
     import "../app.css";
+    import { ThemeToggle } from "../lib/components";
 </script>
 
 
 <main>
+    <div>
+        <ThemeToggle />
+    </div>
+
     <slot />
 </main>
+
 
 
 <style lang="postcss">
@@ -16,7 +22,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
 
-        background: url('/background-tile-dark.png');
+    div {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
     }
 </style>
