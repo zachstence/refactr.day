@@ -45,10 +45,10 @@
     }
 
     :global(body.dark) pre::before {
-        color: rgba(255, 255, 255, 0.15);
+        color: #181818;
     }
 
     :global(body.light) pre::before {
-        color: rgba(0, 0, 0, 0.15);
+        color: #D8D8D8;
     }
 </style>
