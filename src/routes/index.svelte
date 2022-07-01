@@ -17,6 +17,5 @@ It has been {_days} days since the last refactor.
 
 <button on:click={reset}>Reset</button>
 -->
-<div>test</div>
 <SevenSegment content={19} />
 
