@@ -21,7 +21,7 @@
     </div>
 
     <Blur>
-        <Days days={19} />
+        <Days days={_days} />
     </Blur>
 
     <div class="start">
