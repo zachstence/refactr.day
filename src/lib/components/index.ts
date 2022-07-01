@@ -1,3 +1,3 @@
-import SevenSegment from "./SevenSegment.svelte"
+import Days from "./Days.svelte"
 
-export { SevenSegment }
+export { Days }

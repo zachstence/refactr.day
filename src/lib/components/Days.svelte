@@ -1,19 +1,37 @@
 <script lang="ts">
-    export let content: number;
+    export let days: number;
 
     // "!" is a full-width blank 7-segment character
-    const padded = content.toString().padStart(3, "!");
+    const padded = days.toString().padStart(3, "!");
 </script>
 
-<pre>{padded}</pre>
+<div>
+    <pre>{padded}</pre>
+    <span>DAYS</span>
+</div>
 
 
 <style lang="postcss">
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    span {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
     pre {
         position: relative;
+        z-index: 1;
+
         font-family: "DSEG7 Classic";
         font-size: 128px;
-        z-index: 1;
+        width: fit-content;
+        margin: 0;
 
         &::before {
             position: absolute;
