@@ -14,15 +14,21 @@
 
 
 <section>
-    <Blur>
-        <p>It has been</p>
-    </Blur>
+    <div class="end">
+        <Blur>
+            <p>It has been</p>
+        </Blur>
+    </div>
+
     <Blur>
         <Days days={19} />
     </Blur>
-    <Blur>
-        <p>since the last refactor</p>
-    </Blur>
+
+    <div class="start">
+        <Blur>
+            <p>since the last refactor</p>
+        </Blur>
+    </div>
 </section>
 
 
@@ -32,20 +38,17 @@
         height: 100%;
 
         display: grid;
-        grid-template-rows: 25% 50% 25%;
-        grid-template-areas:
-            "top"
-            "middle"
-            "bottom";
+        grid-template-rows: 30% 40% 30%;
         justify-items: center;
         align-items: center;
+    }
 
-        & *:first-child {
-            align-self: end;
-        }
-        & *:last-child {
-            align-self: start;
-        }
+    .end {
+        align-self: end;
+    }
+
+    .start {
+        align-self: start;
     }
 
     p {
