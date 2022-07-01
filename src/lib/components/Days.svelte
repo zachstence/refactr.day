@@ -40,7 +40,7 @@
             z-index: -1;
             
             content: "888";
-            color: rgb(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.15);
         }
     }
 </style>

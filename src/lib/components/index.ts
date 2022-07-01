@@ -1,3 +1,4 @@
+import Blur from "./Blur.svelte"
 import Days from "./Days.svelte"
 
-export { Days }
+export { Blur, Days }

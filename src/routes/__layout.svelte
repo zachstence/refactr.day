@@ -18,6 +18,5 @@
         justify-content: center;
 
         background: url('/background-tile-dark.png');
-        background-cover: repeat;
     }
 </style>

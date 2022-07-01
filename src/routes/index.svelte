@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Days } from "$lib/components";
+    import { Blur, Days } from "$lib/components";
 
     export let days: number;
 
@@ -12,10 +12,17 @@
     }
 </script>
 
+
 <section>
-    <p>It has been</p>
-    <Days days={19} />
-    <p>since the last refactor</p>
+    <Blur>
+        <p>It has been</p>
+    </Blur>
+    <Blur>
+        <Days days={19} />
+    </Blur>
+    <Blur>
+        <p>since the last refactor</p>
+    </Blur>
 </section>
 
 
