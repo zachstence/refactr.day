@@ -20,8 +20,15 @@
     }
 
     span {
-        font-size: 36px;
         font-weight: 700;
+
+        font-size: 16px;
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+        @media (min-width: 1024px) {
+            font-size: 36px;
+        }
     }
 
     pre {
@@ -29,10 +36,17 @@
         z-index: 1;
 
         font-family: "DSEG7 Classic";
-        font-size: 128px;
         width: fit-content;
         margin: 0;
 
+        font-size: 48px;
+        @media (min-width: 768px) {
+            font-size: 98px;
+        }
+        @media (min-width: 1024px) {
+            font-size: 128px;
+        }
+        
         &::before {
             position: absolute;
             top: 0;

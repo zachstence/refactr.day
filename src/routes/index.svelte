@@ -53,8 +53,16 @@
 
     p {
         font-family: Montserrat, sans-serif;
-        font-size: 48px;
         font-weight: 900;
         text-transform: uppercase;
+        text-align: center;
+
+        font-size: 30px;
+        @media (min-width: 768px) {
+            font-size: 40px;
+        }
+        @media (min-width: 1024px) {
+            font-size: 48px;
+        }
     }
 </style>

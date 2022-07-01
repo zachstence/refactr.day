@@ -30,8 +30,12 @@
 
 <style lang="postcss">
     button {
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
+        @media (min-width: 1024px) {
+            width: 4rem;
+            height: 4rem;
+        }
 
         background-color: transparent;
         border: none;

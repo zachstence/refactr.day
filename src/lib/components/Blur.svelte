@@ -12,7 +12,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 50px;
+
+        padding: 16px;
+        @media (min-width: 768px) {
+            padding: 36px;
+        }
+        @media (min-width: 1024px) {
+            padding: 50px;
+        }
     }
     .blur {
         position: absolute;
@@ -21,7 +28,6 @@
         height: 100%;
         
         border-radius: 4rem;
-
     }
 
     :global(body.light) .blur {
