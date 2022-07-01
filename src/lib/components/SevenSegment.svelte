@@ -9,6 +9,6 @@
 
 <style lang="postcss">
     div {
-        @apply font-DSEG7;
+        font-family: "DSEG7 Classic";
     }
 </style>

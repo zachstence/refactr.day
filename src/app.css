@@ -1,14 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
     color: white;
+    font-family: Montserrat;
+}
+
+body {
+    margin: 0;
 }
 
 @font-face {
     font-family: "DSEG7 Classic";
-    src: 
+    src:
         url("/static/fonts/DSEG7Classic-BoldItalic.woff2") format("woff2"), /* Super Modern Browsers */ 
         url("/static/fonts/DSEG7Classic-BoldItalic.woff") format("woff"), /* Modern Browsers */ 
         url("/static/fonts/DSEG7Classic-BoldItalic.ttf") format("truetype"), /* Safari, Android, iOS */
