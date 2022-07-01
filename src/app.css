@@ -24,7 +24,7 @@ body.dark * {
 @font-face {
     font-family: "DSEG7 Classic";
     src:
-        url("/static/fonts/DSEG7Classic-BoldItalic.woff2") format("woff2"), /* Super Modern Browsers */ 
-        url("/static/fonts/DSEG7Classic-BoldItalic.woff") format("woff"), /* Modern Browsers */ 
-        url("/static/fonts/DSEG7Classic-BoldItalic.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("/fonts/DSEG7Classic-BoldItalic.ttf") format("woff2"), /* Super Modern Browsers */ 
+        url("/fonts/DSEG7Classic-BoldItalic.woff") format("woff"), /* Modern Browsers */ 
+        url("/fonts/DSEG7Classic-BoldItalic.ttf") format("truetype"); /* Safari, Android, iOS */
 }
