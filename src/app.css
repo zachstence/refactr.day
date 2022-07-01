@@ -1,9 +1,9 @@
+@reset-global pc;
+
 * {
     color: white;
-    font-family: Montserrat;
-}
-
-body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
     margin: 0;
 }
 

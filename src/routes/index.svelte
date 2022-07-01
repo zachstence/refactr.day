@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { SevenSegment } from "$lib/components";
+    import { Days } from "$lib/components";
 
     export let days: number;
 
@@ -12,10 +12,39 @@
     }
 </script>
 
-<!-- 
-It has been {_days} days since the last refactor.
+<section>
+    <p>It has been</p>
+    <Days days={19} />
+    <p>since the last refactor</p>
+</section>
 
-<button on:click={reset}>Reset</button>
--->
-<SevenSegment content={19} />
 
+<style lang="postcss">
+    section {
+        width: 100%;
+        height: 100%;
+
+        display: grid;
+        grid-template-rows: 25% 50% 25%;
+        grid-template-areas:
+            "top"
+            "middle"
+            "bottom";
+        justify-items: center;
+        align-items: center;
+
+        & *:first-child {
+            align-self: end;
+        }
+        & *:last-child {
+            align-self: start;
+        }
+    }
+
+    p {
+        font-family: Montserrat, sans-serif;
+        font-size: 48px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+</style>
