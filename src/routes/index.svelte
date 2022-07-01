@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { SevenSegment } from "$lib/components";
+
     export let days: number;
 
     let _days = days;
@@ -10,6 +12,11 @@
     }
 </script>
 
+<!-- 
 It has been {_days} days since the last refactor.
 
 <button on:click={reset}>Reset</button>
+-->
+<div>test</div>
+<SevenSegment content={19} />
+
